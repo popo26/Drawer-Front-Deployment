@@ -20,12 +20,11 @@ export default function LoginPage() {
     e.preventDefault();
 
     axios
-      .post("http://127.0.0.1:8080/api/users/login", {
+      .post("https://drawer-backend.onrender.com/api/users/login", {
         email: user.email,
         password: user.password,
       })
       .then((response) => {
-        console.log(response);
         if (!response.data.errmsg) {
           //set isLoggedIn for frontend
           setUser({ ...user, isLoggedIn: true });

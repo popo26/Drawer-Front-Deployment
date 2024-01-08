@@ -44,7 +44,7 @@ export default function RegisterPage() {
     e.preventDefault();
 
     axios
-      .post("http://127.0.0.1:8080/api/users/register", {
+      .post("https://drawer-backend.onrender.com/api/users/register", {
         username: userForm.username,
         email: userForm.email,
         password: userForm.password,
@@ -52,7 +52,6 @@ export default function RegisterPage() {
         isLoggedIn: false,
       })
       .then((response) => {
-        console.log(response);
         if (!response.data.errmsg) {
           console.log("successful signup");
           resetForm();

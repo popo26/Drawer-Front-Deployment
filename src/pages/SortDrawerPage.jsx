@@ -58,7 +58,7 @@ export default function SortDrawerPage() {
         ) {
           // subDrawersToBeMoved.push(x);
           subDrawersToBeMoved.push(drawers[x]);
-          console.log("subDrawersToBeMoved SORTDRAWER", subDrawersToBeMoved);
+          // console.log("subDrawersToBeMoved SORTDRAWER", subDrawersToBeMoved);
 
           let newLevel;
           // if (drawers[x].drawerId) {
@@ -81,23 +81,23 @@ export default function SortDrawerPage() {
             );
             // newLevel = parentDrawer[0].level + 1;
             newLevel = drawers[x].level + 1;
-            console.log(
-              `SORT CCCCCCCCCC: ${drawers[x].name}, , , Level is ${newLevel}`
-            );
+            // console.log(
+            //   `SORT CCCCCCCCCC: ${drawers[x].name}, , , Level is ${newLevel}`
+            // );
           } else if (
             drawers[x].drawerId &&
             drawers[x].drawerId !== parentDrawerId &&
             drawers[x].rootId === drawerToBeMovedObject[0]["rootId"]
           ) {
             newLevel = drawers[x].level + 1;
-            console.log(
-              `SORT EEEEEEEEEEEE: ${drawers[x].name}, , , Level is ${newLevel}`
-            );
+            // console.log(
+            //   `SORT EEEEEEEEEEEE: ${drawers[x].name}, , , Level is ${newLevel}`
+            // );
           } else {
             newLevel = 3;
-            console.log(
-              `SORT DDDDDDDDDDD: ${drawers[x].name}, , , Level is ${newLevel}`
-            );
+            // console.log(
+            //   `SORT DDDDDDDDDDD: ${drawers[x].name}, , , Level is ${newLevel}`
+            // );
           }
           //////WORKING ON THIS/////////////////////////////////////////////////////////////////////
 
@@ -210,7 +210,7 @@ export default function SortDrawerPage() {
           // }
           ///////////////////////////////////////////////////////////////////////////
 
-          console.log("matching subdrawers", drawers[x]);
+          // console.log("matching subdrawers", drawers[x]);
           let dataPost = {
             rootId: newTopLevelDrawerId,
             root: false,
@@ -294,10 +294,10 @@ export default function SortDrawerPage() {
     })
       .then((response) => response.json())
       .then((json) => {
-        console.log("You are here1");
+        // console.log("You are here1");
 
         moveDrawerToNewDrawer(json.data._id);
-        console.log("You are here2");
+        // console.log("You are here2");
         moveAllChildrenToNewDrawer(drawerToBeMoved, json.data._id);
       })
       .catch((error) => console.error(error.message));

@@ -161,7 +161,6 @@ export default function SortScribblePage() {
               onClick={(e) => {
                 e.preventDefault();
                 let passingData = { selectedScribbleId, selectedDrawerId };
-                //console.log("PassingData", passingData);
                 {
                   !selectedDrawerId
                     ? alert("Please select destination drawer")

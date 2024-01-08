@@ -85,7 +85,6 @@ function FileDrop({ tempFiles, setTempFiles, baseImage, setBaseImage }) {
   ));
 
   const uploadImage = async (e) => {
-    console.log(e.target.files);
     const files = e.target.files[0];
     const base64 = await convertBase64(files);
     setBaseImage(base64);

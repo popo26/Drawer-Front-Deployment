@@ -1,6 +1,6 @@
 export default {
   logout: () => {
-    return fetch("http://127.0.0.1:8080/api/users/logout", {
+    return fetch("https://drawer-backend.onrender.com/api/users/logout", {
       method: "POST",
       mode: "cors",
       body: JSON.stringify(),

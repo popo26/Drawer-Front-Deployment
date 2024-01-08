@@ -26,17 +26,15 @@ export default function ProfilePage() {
     e.preventDefault();
 
     axios
-      .put(`http://127.0.0.1:8080/api/users/update/${user._id}`, {
+      .put(`https://drawer-backend.onrender.com/api/users/update/${user._id}`, {
         email: user.email,
         password: user.password,
         username: user.username,
       })
       .then((response) => {
-        console.log(response);
         if (!response.data.errmsg) {
           //set isLoggedIn for frontend
-          console.log("Update response", response.data);
-          console.log("successful UPDATED", user);
+
           localStorage.setItem("user", JSON.stringify(user));
         }
       })
@@ -52,12 +50,15 @@ export default function ProfilePage() {
     console.log("Change Password clicked");
 
     axios
-      .put(`http://127.0.0.1:8080/api/users/changepassword/${user._id}`, {
-        _id: user._id,
-        email: user.email,
-        password: user.password,
-        username: user.username,
-      })
+      .put(
+        `https://drawer-backend.onrender.com/api/users/changepassword/${user._id}`,
+        {
+          _id: user._id,
+          email: user.email,
+          password: user.password,
+          username: user.username,
+        }
+      )
       .then((response) => {
         //console.log(response);
         if (!response.data.errmsg) {

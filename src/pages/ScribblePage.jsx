@@ -121,9 +121,9 @@ export default function ScribblePage() {
           let imageArray = [];
           const parent = document.querySelector(".screenshot");
           if (parent.getElementsByTagName("img")) {
-            console.log("________________FOUND");
+            // console.log("________________FOUND");
           } else {
-            console.log("NOOOOOOOOOOOOOOOOOOOO");
+            // console.log("NOOOOOOOOOOOOOOOOOOOO");
           }
         });
     }

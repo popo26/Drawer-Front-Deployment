@@ -22,7 +22,6 @@ export default function TestPage() {
           method: "POST",
           body: form,
         });
-        console.log("files", acceptedFiles[0])
 
       },
       [setFiles]
