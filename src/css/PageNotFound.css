@@ -1,0 +1,29 @@
+.PageNotFound{
+    background-color: black;
+    padding:30px;
+    height:90vh;
+}
+
+.PageNotFound-msg{
+    color:red;
+    font-family: "Pacifico", cursive;
+    padding-bottom:10px;
+}
+
+.PageNotFound>img{
+    width:100%;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+    .PageNotFound>img{
+        height:60vh;
+        object-fit: contain;
+    }
+
+    .PageNotFound{
+
+        height:78vh;
+    }
+  }
+  

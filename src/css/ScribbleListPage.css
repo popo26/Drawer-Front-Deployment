@@ -1,0 +1,14 @@
+.stray-list {
+  padding: 30px;
+}
+
+.ScribbleListPage > h4 {
+  font-family: "Pacifico", cursive;
+  margin-top: 20px;
+  color: pink;
+
+  background-color: black;
+  padding: 12px;
+  border-radius: 10px;
+  display: inline-block;
+}

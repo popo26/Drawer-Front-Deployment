@@ -1,0 +1,26 @@
+.ProfilePage {
+  padding-top: 40px;
+}
+
+.username-form,
+.email-form,
+.password-form {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.profile-label {
+  font-family: "Pacifico", cursive;
+}
+
+@media screen and (max-width: 570px) {
+  .ProfilePage {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .modify-btn {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,42 @@
+.ScribblePage {
+  padding: 20px;
+}
+
+.textarea-wrap {
+  overflow: hidden;
+  padding: 0 4px 0 12px;
+}
+
+textarea {
+  width: 100%;
+  height: min-content;
+  border: 4px dotted pink;
+  margin-top: 20px;
+  outline: none;
+}
+
+.screenshot {
+  width: 90%;
+  margin: auto;
+  height: min-content;
+  background-color: rgb(240, 204, 224, 0.3);
+  text-align: left;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.span-div {
+  border: 1px solid black;
+}
+
+.input {
+  outline: pink;
+}
+
+.or {
+  margin: 10px;
+}
+
+.buttons-div {
+  text-align: center;
+}

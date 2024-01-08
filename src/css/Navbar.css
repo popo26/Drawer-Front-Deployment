@@ -1,0 +1,18 @@
+.Navbar {
+  border-bottom: 2px solid black;
+}
+
+.greeting {
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  /* body {
+    background-color: lightgreen;
+  } */
+
+  .greeting {
+    font-size: 1.8rem;
+  }
+}

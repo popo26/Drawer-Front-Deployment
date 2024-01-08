@@ -1,0 +1,17 @@
+.ScribbleBtn-div {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.ScribbleBtn {
+  background: rgb(180, 236, 69);
+  border-radius: 26px;
+  border: 10px solid rgb(181, 27, 166);
+  color: rgb(181, 27, 166);
+}
+
+.ScribbleBtn:hover {
+  background: blue;
+  color: white;
+}

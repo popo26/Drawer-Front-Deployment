@@ -1,0 +1,19 @@
+.AccordionItem {
+  border: 6px solid #404040;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  position: relative;
+}
+
+.drawer-icon {
+  position: absolute;
+  right: 10px;
+}
+
+

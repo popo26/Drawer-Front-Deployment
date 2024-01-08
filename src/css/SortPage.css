@@ -1,0 +1,31 @@
+.sort-msg-btn {
+  margin: 20px;
+  border-radius: 6px;
+  padding: 6px;
+  border: 4px solid black;
+  background: pink;
+  color: #404040;
+  font-family: "Pacifico", cursive;
+  font-size:1rem;
+}
+
+.next-btn {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#page > h4 {
+  font-size: 12px;
+}
+
+.scrb-createNewDrawer-div {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .sort-msg-btn {
+    font-size: 1.4rem;
+  }
+}

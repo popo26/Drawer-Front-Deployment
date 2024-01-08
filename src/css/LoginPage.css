@@ -1,0 +1,19 @@
+.LoginPage > .form {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 60%;
+  max-width: 400px;
+
+  margin: auto;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .LoginPage > .form {
+    min-width: 30%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 60px;
+  }
+}

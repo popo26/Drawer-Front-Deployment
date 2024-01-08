@@ -1,0 +1,38 @@
+.sort-preview-drawer {
+  text-align: left;
+  /* color: green; */
+}
+
+.sort-drawer-preview-div > h3 {
+  font-size: 12px;
+}
+
+.sort-preview-sub-drawers {
+  text-align: left;
+}
+
+.sort-preview-scribbles {
+  text-align: left;
+}
+
+.empty-drawer {
+  text-align: left;
+  text-indent: 30px;
+  color: blueviolet;
+}
+
+.drawer-content-result-div {
+  padding: 10px;
+  border: 10px solid #606060;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.move-btn {
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  margin-top: 30px;
+  cursor: pointer;
+}

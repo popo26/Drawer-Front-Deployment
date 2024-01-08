@@ -1,0 +1,111 @@
+.Accordion {
+  padding: 20px;
+}
+
+.sub-drawer-name {
+  color: #808080;
+  font-weight: 900;
+  background-color: #e0e0e0;
+  padding: 3px;
+  font-size: 16px;
+}
+
+/* Drawer indent */
+.indent-1 {
+  text-indent: 20px;
+}
+
+.indent-2 {
+  text-indent: 40px;
+}
+
+.indent-3 {
+  text-indent: 60px;
+}
+
+.indent-4 {
+  text-indent: 80px;
+}
+
+.indent-5 {
+  text-indent: 100px;
+}
+
+.indent-6 {
+  text-indent: 120px;
+}
+
+.indent-7 {
+  text-indent: 140px;
+}
+
+.indent-8 {
+  text-indent: 160px;
+}
+
+.indent-9 {
+  text-indent: 180px;
+}
+
+.indent-10 {
+  text-indent: 200px;
+}
+
+/* Scribble indent */
+.scrb-indent1 {
+  text-indent: 20px;
+}
+
+.scrb-indent2 {
+  text-indent: 40px;
+}
+
+.scrb-indent3 {
+  text-indent: 60px;
+}
+
+.scrb-indent4 {
+  text-indent: 80px;
+}
+
+.scrb-indent5 {
+  text-indent: 100px;
+}
+
+.scrb-indent6 {
+  text-indent: 120px;
+}
+
+.scrb-indent7 {
+  text-indent: 140px;
+}
+
+.scrb-indent8 {
+  text-indent: 160px;
+}
+
+.scrb-indent9 {
+  text-indent: 180px;
+}
+
+.scrb-indent10 {
+  text-indent: 200px;
+}
+
+.no-scribble {
+  color: blueviolet;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #606060;
+}
+
+a:hover {
+  color: purple;
+}
+
+.triangle {
+  float: left;
+}
