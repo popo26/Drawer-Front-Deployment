@@ -79,7 +79,7 @@ export default function ScribblePage() {
       attachment: attachmentBool,
       files: filesInfo,
     };
-    fetch("http://localhost:8080/api/scribbles/create", {
+    fetch("https://drawer-backend.onrender.com/api/scribbles/create", {
       method: "POST",
       mode: "cors",
       headers: {

@@ -24,7 +24,7 @@ export default function CreateDrawerPage() {
       root: true,
       level: 1,
     };
-    fetch("http://localhost:8080/api/drawers/create", {
+    fetch("https://drawer-backend.onrender.com/api/drawers/create", {
       method: "POST",
       mode: "cors",
       headers: {

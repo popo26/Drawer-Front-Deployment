@@ -217,7 +217,7 @@ export default function SortDrawerPage() {
             level: newLevel,
           };
 
-          fetch(`http://localhost:8080/api/drawers/${drawers[x]._id}`, {
+          fetch(`https://drawer-backend.onrender.com/api/drawers/${drawers[x]._id}`, {
             method: "PUT",
             mode: "cors",
             headers: {
@@ -238,7 +238,7 @@ export default function SortDrawerPage() {
           stray: false,
           level: drawerToBeMovedObject[0]["level"] + scribbles[x].level,
         };
-        fetch(`http://localhost:8080/api/scribbles/${scribbles[x]._id}`, {
+        fetch(`https://drawer-backend.onrender.com/api/scribbles/${scribbles[x]._id}`, {
           method: "PUT",
           mode: "cors",
           headers: {
@@ -260,7 +260,7 @@ export default function SortDrawerPage() {
       root: false,
       level: 2,
     };
-    fetch(`http://localhost:8080/api/drawers/${drawerToBeMoved}`, {
+    fetch(`https://drawer-backend.onrender.com/api/drawers/${drawerToBeMoved}`, {
       method: "PUT",
       mode: "cors",
       headers: {
@@ -284,7 +284,7 @@ export default function SortDrawerPage() {
       root: true,
       level: 1,
     };
-    fetch("http://localhost:8080/api/drawers/create", {
+    fetch("https://drawer-backend.onrender.com/api/drawers/create", {
       method: "POST",
       mode: "cors",
       headers: {

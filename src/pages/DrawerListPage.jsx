@@ -26,7 +26,7 @@ export default function DrawerListPage() {
       (scrb) => scrb.drawerId == drawerId
     );
     for (let t of associatedScribbles) {
-      fetch(`http://localhost:8080/api/scribbles/${t._id}`, {
+      fetch(`https://drawer-backend.onrender.com/api/scribbles/${t._id}`, {
         method: "DELETE",
         mode: "cors",
         headers: {
@@ -39,7 +39,7 @@ export default function DrawerListPage() {
   };
 
   const deleteSelectedDrawer = (id) => {
-    fetch(`http://localhost:8080/api/drawers/${id}`, {
+    fetch(`https://drawer-backend.onrender.com/api/drawers/${id}`, {
       method: "DELETE",
       mode: "cors",
       headers: {
@@ -58,7 +58,7 @@ export default function DrawerListPage() {
         const sameRootIdDrawers = drawers.filter((item) => item.rootId == id);
         for (let sameRootIdDrawerObj of sameRootIdDrawers) {
           fetch(
-            `http://localhost:8080/api/drawers/${sameRootIdDrawerObj._id}`,
+            `https://drawer-backend.onrender.com/api/drawers/${sameRootIdDrawerObj._id}`,
             {
               method: "DELETE",
               mode: "cors",
@@ -75,7 +75,7 @@ export default function DrawerListPage() {
         //delete all subdrawers whose drawerId is id
         const subDrawers = drawers.filter((item) => item.drawerId == id);
         for (let subDrawerObj of subDrawers) {
-          fetch(`http://localhost:8080/api/drawers/${subDrawerObj._id}`, {
+          fetch(`https://drawer-backend.onrender.com/api/drawers/${subDrawerObj._id}`, {
             method: "DELETE",
             mode: "cors",
             headers: {
@@ -310,7 +310,7 @@ export default function DrawerListPage() {
     let dataPost = {
       name: drawerNameToEdit.toUpperCase(),
     };
-    fetch(`http://localhost:8080/api/drawers/${id}`, {
+    fetch(`https://drawer-backend.onrender.com/api/drawers/${id}`, {
       method: "PUT",
       mode: "cors",
       headers: {

@@ -15,7 +15,7 @@ export default function ScribbleListPage() {
 
   //+++++++++++++ Delete a scribble in DB+++++++++++++++++++++++++++++++++++
   const deleteScribble = (id) => {
-    fetch(`http://localhost:8080/api/scribbles/${id}`, {
+    fetch(`https://drawer-backend.onrender.com/api/scribbles/${id}`, {
       method: "DELETE",
       mode: "cors",
       headers: {

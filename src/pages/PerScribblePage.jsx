@@ -72,7 +72,7 @@ export default function PerScribblePage() {
 
   //+++++++++++++++ Delete a Scribble from DB ++++++++++++++++++++++++++++++++++++++++++++++
   const deleteScribble = (id) => {
-    fetch(`http://localhost:8080/api/scribbles/${id}`, {
+    fetch(`https://drawer-backend.onrender.com/api/scribbles/${id}`, {
       method: "DELETE",
       mode: "cors",
       headers: {
@@ -113,7 +113,7 @@ export default function PerScribblePage() {
               : (dataPost = {
                   files: newFilesArray,
                 });
-            fetch(`http://localhost:8080/api/scribbles/${id}`, {
+            fetch(`https://drawer-backend.onrender.com/api/scribbles/${id}`, {
               method: "PUT",
               mode: "cors",
               headers: {
@@ -167,7 +167,7 @@ export default function PerScribblePage() {
       content: newContent,
       files: target.files,
     };
-    fetch(`http://localhost:8080/api/scribbles/${id}`, {
+    fetch(`https://drawer-backend.onrender.com/api/scribbles/${id}`, {
       method: "PUT",
       mode: "cors",
       headers: {

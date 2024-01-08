@@ -45,7 +45,7 @@ export default function SortScribblePage() {
       stray: false,
       level: 1,
     };
-    fetch(`http://localhost:8080/api/scribbles/${selectedScribbleId}`, {
+    fetch(`https://drawer-backend.onrender.com/api/scribbles/${selectedScribbleId}`, {
       method: "PUT",
       mode: "cors",
       headers: {
@@ -69,7 +69,7 @@ export default function SortScribblePage() {
       root: true,
       level: 1,
     };
-    fetch("http://localhost:8080/api/drawers/create", {
+    fetch("https://drawer-backend.onrender.com/api/drawers/create", {
       method: "POST",
       mode: "cors",
       headers: {

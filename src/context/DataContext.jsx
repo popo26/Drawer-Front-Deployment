@@ -28,7 +28,7 @@ export const DataProvider = (props) => {
 
   //Fetch data from the server
   useEffect(() => {
-    fetch("http://localhost:8080/api/scribbles", {
+    fetch("https://drawer-backend.onrender.com/api/scribbles", {
       method: "GET",
       mode: "cors",
     })
@@ -40,7 +40,7 @@ export const DataProvider = (props) => {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/drawers", {
+    fetch("https://drawer-backend.onrender.com/api/drawers", {
       method: "GET",
       mode: "cors",
     })
@@ -57,7 +57,7 @@ export const DataProvider = (props) => {
     let dataPost = {
       rootId: newDrawerObj[0]["_id"],
     };
-    fetch(`http://localhost:8080/api/drawers/${drawerId}`, {
+    fetch(`https://drawer-backend.onrender.com/api/drawers/${drawerId}`, {
       method: "PUT",
       mode: "cors",
       headers: {
