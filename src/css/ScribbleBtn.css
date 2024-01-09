@@ -5,13 +5,13 @@
 }
 
 .ScribbleBtn {
-  background: rgb(180, 236, 69);
+  background: #fff9c9;
   border-radius: 26px;
-  border: 10px solid rgb(181, 27, 166);
-  color: rgb(181, 27, 166);
+  border: 10px solid #862b0d;
+  color: #862b0d;
 }
 
 .ScribbleBtn:hover {
-  background: blue;
-  color: white;
+  border: 10px solid #c27664;
+  color: #c27664;
 }

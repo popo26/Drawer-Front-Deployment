@@ -19,7 +19,7 @@ textarea {
   width: 90%;
   margin: auto;
   height: min-content;
-  background-color: rgb(240, 204, 224, 0.3);
+  background-color: #f0f0e4;
   text-align: left;
   padding: 10px;
   border-radius: 6px;
@@ -39,4 +39,11 @@ textarea {
 
 .buttons-div {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .ScribblePage {
+    width: 60%;
+    margin: auto;
+  }
 }

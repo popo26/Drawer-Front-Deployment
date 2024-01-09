@@ -9,6 +9,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+p:hover{
+  color:#A9294F;
+}
+
 @media screen and (max-width: 767px) {
   /* body {
     background-color: lightgoldenrodyellow;

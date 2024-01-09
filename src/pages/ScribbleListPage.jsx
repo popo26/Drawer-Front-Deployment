@@ -54,7 +54,7 @@ export default function ScribbleListPage() {
                 width="18"
               />
             )}
-            {item.title}
+            <span className="stray-item">{item.title}</span>
           </Link>{" "}
           <a
             onClick={() => {
@@ -66,14 +66,14 @@ export default function ScribbleListPage() {
               className="icon10"
               icon="ion:trash-outline"
               color="black"
-              width="20"
+              width="24"
             />
           </a>
           <Icon
             className="icon10"
             icon="mingcute:drawer-line"
             color="black"
-            width="22"
+            width="25"
             onClick={() => {
               setSelectedScribbleId(item._id);
               sessionStorage.setItem("selectedScribble", item._id);

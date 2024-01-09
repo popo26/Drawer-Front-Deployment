@@ -75,13 +75,16 @@ export default function DrawerListPage() {
         //delete all subdrawers whose drawerId is id
         const subDrawers = drawers.filter((item) => item.drawerId == id);
         for (let subDrawerObj of subDrawers) {
-          fetch(`https://drawer-backend.onrender.com/api/drawers/${subDrawerObj._id}`, {
-            method: "DELETE",
-            mode: "cors",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          })
+          fetch(
+            `https://drawer-backend.onrender.com/api/drawers/${subDrawerObj._id}`,
+            {
+              method: "DELETE",
+              mode: "cors",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          )
             .then((response) => response.json())
             .catch((error) => console.error(error.message));
           deleteScribbles(subDrawerObj._id);
@@ -271,14 +274,14 @@ export default function DrawerListPage() {
               onClick={() => handleDelete(item._id)}
               icon="ion:trash-outline"
               color="black"
-              width="18"
+              width="22"
               className="icon10"
             />
             <Icon
               className="icon10"
               icon="mingcute:drawer-line"
               color="black"
-              width="18"
+              width="22"
               onClick={() => {
                 let passingData = { selectedDrawerId, drawerToBeMoved };
                 navigate("/sort-drawer", { state: passingData });
@@ -344,14 +347,14 @@ export default function DrawerListPage() {
               onClick={() => handleDelete(item._id)}
               icon="ion:trash-outline"
               color="black"
-              width="18"
+              width="26"
               className="icon10"
             />
             <Icon
               className="icon10"
               icon="mingcute:drawer-line"
               color="black"
-              width="18"
+              width="26"
               onClick={() => {
                 setDrawerToBeMoved(item._id);
                 let passingData = { selectedDrawerId, drawerToBeMoved };
