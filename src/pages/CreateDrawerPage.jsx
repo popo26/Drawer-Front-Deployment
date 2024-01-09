@@ -50,7 +50,7 @@ export default function CreateDrawerPage() {
       !drawerName ? alert("The new drawer name is empty.") : createNewDrawer();
       setDrawerName("");
       navigate("/home");
-      navigate(0);
+      //navigate(0);
     }
   };
 

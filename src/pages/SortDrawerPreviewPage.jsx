@@ -275,7 +275,7 @@ export default function SortDrawerPreviewPage() {
     moveAllChildrenToNewDrawer(drawerToBeMoved, selectedDrawerId);
     updateParentDrawerBoolean(selectedDrawerId);
     navigate("/home");
-    //navigate(0);
+    navigate(0);
   };
 
   //+++++++++++++++++++++++++++Preview list --- Selected Drawer+++++++++++++++
