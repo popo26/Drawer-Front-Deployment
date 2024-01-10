@@ -286,6 +286,8 @@ export default function DrawerListPage() {
                 let passingData = { selectedDrawerId, drawerToBeMoved };
                 navigate("/sort-drawer", { state: passingData });
                 sessionStorage.setItem("drawerToBeMoved", item._id);
+                navigate(0);
+
               }}
             />
             {showUpdateIcon(item._id)}
