@@ -210,7 +210,7 @@ export default function SortDrawerPage() {
 
   const destinationDrawerObjName = () => {
     if (!loadingDrawers) {
-      const obj = drawers.filter((item) => item._id == selectedDrawerId);
+      const obj = drawers.filter((item) => item._id == sessionStorage.getItem('drawerToBeMoved'));
       return obj[0]["name"];
     }
   };
