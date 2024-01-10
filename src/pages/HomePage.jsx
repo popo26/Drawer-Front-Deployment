@@ -9,12 +9,12 @@ export default function HomePage({ expandedIndex, handleExpand }) {
   const { user, setUser } = useUserContext();
   const tooltipCreate = <Tooltip id="tooltip">Create New Drawer</Tooltip>;
 
-  useEffect(() => {
-    const userInBrowser = JSON.parse(localStorage.getItem("user"));
-    if (userInBrowser) {
-      setUser(userInBrowser);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const userInBrowser = JSON.parse(localStorage.getItem("user"));
+  //   if (userInBrowser) {
+  //     setUser(userInBrowser);
+  //   }
+  // }, []);
 
   return (
     <div>
