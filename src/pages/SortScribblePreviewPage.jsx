@@ -67,14 +67,17 @@ export default function SortScribblePreviewPage() {
       stray: false,
       level: selectedDrawerLevel,
     };
-    fetch(`https://drawer-backend.onrender.com/api/scribbles/${state.selectedScribbleId}`, {
-      method: "PUT",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dataPost),
-    })
+    fetch(
+      `https://drawer-backend.onrender.com/api/scribbles/${state.selectedScribbleId}`,
+      {
+        method: "PUT",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataPost),
+      }
+    )
       .then((response) => response.json())
       .then(() => navigate(0))
       .catch((error) => console.error(error.message));
@@ -187,10 +190,10 @@ export default function SortScribblePreviewPage() {
     <div>
       <p>
         {!loadingScribbles && scrb.title}
-        <Icon icon="tabler:scribble" color="red" />{" "}
+        <Icon icon="tabler:scribble" color="#EA4C4C" />{" "}
         <Icon icon="ri:arrow-right-fill" />
         {selectedDrawerId && destinationDrawer?.name}{" "}
-        <Icon icon="mingcute:drawer-line" color="red" />
+        <Icon icon="mingcute:drawer-line" color="#EA4C4C" />
       </p>
 
       <div className="drawer-content-result-div">
@@ -201,7 +204,7 @@ export default function SortScribblePreviewPage() {
       {saveHereSelected && (
         <div>
           <OverlayTrigger placement="right" overlay={tooltipSaveHere}>
-            <Button variant="dark" onClick={handleSaveHere}>
+            <Button variant="dark" onClick={handleSaveHere} className="move-btn2">
               <Icon icon="ic:round-save-alt" width="30" />
             </Button>
           </OverlayTrigger>
@@ -232,7 +235,7 @@ export default function SortScribblePreviewPage() {
         </div>
       )}
 
-      <div className="back-btn">
+      <div className="back-btn move-btn">
         <Icon
           icon="icon-park-outline:back"
           color="black"

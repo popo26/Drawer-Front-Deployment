@@ -275,10 +275,10 @@ export default function DrawerListPage() {
               icon="ion:trash-outline"
               color="black"
               width="22"
-              className="icon10"
+              className="icon10 move-btn2"
             />
             <Icon
-              className="icon10"
+              className="icon10 move-btn2"
               icon="mingcute:drawer-line"
               color="black"
               width="22"
@@ -348,10 +348,10 @@ export default function DrawerListPage() {
               icon="ion:trash-outline"
               color="black"
               width="26"
-              className="icon10"
+              className="icon10 move-btn2"
             />
             <Icon
-              className="icon10"
+              className="icon10 move-btn2"
               icon="mingcute:drawer-line"
               color="black"
               width="26"
@@ -388,7 +388,7 @@ export default function DrawerListPage() {
           color="black"
           width="50"
           onClick={() => navigate(-1)}
-          className="back-btn"
+          className="back-btn move-btn"
         />
       </div>
     </div>

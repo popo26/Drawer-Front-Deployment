@@ -196,14 +196,17 @@ export default function SortDrawerPreviewPage() {
           level: newLevel,
         };
 
-        fetch(`https://drawer-backend.onrender.com/api/drawers/${drawers[x]._id}`, {
-          method: "PUT",
-          mode: "cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(dataPost),
-        })
+        fetch(
+          `https://drawer-backend.onrender.com/api/drawers/${drawers[x]._id}`,
+          {
+            method: "PUT",
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataPost),
+          }
+        )
           .then((response) => response.json())
           .catch((error) => console.error(error.message));
       } else {
@@ -218,14 +221,17 @@ export default function SortDrawerPreviewPage() {
           stray: false,
           level: newTopLevelDrawerObject[0]["level"] + scribbles[x].level,
         };
-        fetch(`https://drawer-backend.onrender.com/api/scribbles/${scribbles[x]._id}`, {
-          method: "PUT",
-          mode: "cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(dataPost),
-        })
+        fetch(
+          `https://drawer-backend.onrender.com/api/scribbles/${scribbles[x]._id}`,
+          {
+            method: "PUT",
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataPost),
+          }
+        )
           .then((response) => response.json())
           .catch((error) => console.error(error.message));
       }
@@ -257,14 +263,17 @@ export default function SortDrawerPreviewPage() {
       root: false,
       level: parentDrawerObject["level"] + 1,
     };
-    fetch(`https://drawer-backend.onrender.com/api/drawers/${drawerToBeMoved}`, {
-      method: "PUT",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dataPost),
-    })
+    fetch(
+      `https://drawer-backend.onrender.com/api/drawers/${drawerToBeMoved}`,
+      {
+        method: "PUT",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataPost),
+      }
+    )
       .then((response) => response.json())
       .catch((error) => console.error(error.message));
   };
@@ -326,10 +335,10 @@ export default function SortDrawerPreviewPage() {
         {sessionStorage.getItem("drawerToBeMoved") &&
           !loadingDrawers &&
           drawerToBeMovedObjName()}
-        <Icon icon="mingcute:drawer-line" color="red" />
+        <Icon icon="mingcute:drawer-line" color="#EA4C4C" />
         <Icon icon="ri:arrow-right-fill" />
         {selectedDrawerId && !loadingDrawers && destinationDrawerObjName()}
-        <Icon icon="mingcute:drawer-line" color="red" />
+        <Icon icon="mingcute:drawer-line" color="#EA4C4C" />
       </h3>
 
       <div className="drawer-content-result-div">
@@ -349,6 +358,7 @@ export default function SortDrawerPreviewPage() {
           color="black"
           width="50"
           onClick={() => navigate(-1)}
+          className="back-btn move-btn"
         />
       </div>
     </div>

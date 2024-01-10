@@ -170,14 +170,15 @@ export default function ScribblePage() {
 
       <div className="buttons-div">
         <OverlayTrigger placement="bottom" overlay={tooltipJustSave}>
-          <Button onClick={() => handleSubmitScribble()} variant="dark">
+          <Button onClick={() => handleSubmitScribble()} variant="dark" className="move-btn2">
             <Icon icon="ic:round-save-alt" width="24" />
           </Button>
         </OverlayTrigger>
         <span className="or">or</span>
         <OverlayTrigger placement="bottom" overlay={tooltipSort}>
-          <Button variant="dark">
+          <Button variant="dark"  className="move-btn2">
             <Icon
+           
               icon="mingcute:drawer-line"
               color="white"
               width="24"
@@ -197,7 +198,7 @@ export default function ScribblePage() {
       <div>
         {" "}
         <Icon
-          className="back-btn"
+          className="back-btn move-btn"
           icon="icon-park-outline:back"
           color="black"
           width="50"

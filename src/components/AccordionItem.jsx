@@ -24,7 +24,7 @@ export default function AccordionItem({
             <h1>
               {item.name} {triangle}
             </h1>
-            <div className="drawer-icon">
+            <div className="drawer-icon move-btn2">
               <Link to={`/drawer-list/${item._id}`}>
                 <Icon
                   icon="mingcute:drawer-line"

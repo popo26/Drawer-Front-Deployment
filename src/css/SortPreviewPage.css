@@ -36,3 +36,39 @@
   margin-top: 30px;
   cursor: pointer;
 }
+
+.move-btn:hover {
+  animation: updown 2s ease;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+.move-btn2:hover {
+  animation: updown2 1s ease;
+}
+
+@keyframes updown2 {
+  0% {
+    transform: translateY(10%);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
+}

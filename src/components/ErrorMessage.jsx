@@ -12,7 +12,7 @@ function ErrorMessage({ error, resetErrorBoundary }) {
     <div className="ErrorMessage">
       <p>An error occurred:</p>
       <pre>{error.message}</pre>
-      <Button variant="warning" onClick={() => resetErrorBoundary()}>
+      <Button variant="warning" onClick={() => resetErrorBoundary()} className="move-btn2">
         Try Again?
       </Button>
       <br />
@@ -21,7 +21,7 @@ function ErrorMessage({ error, resetErrorBoundary }) {
 
       <div>
         <Icon
-          className="back-btn"
+          className="back-btn move-btn"
           icon="icon-park-outline:back"
           color="black"
           width="50"

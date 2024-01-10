@@ -9,7 +9,7 @@ export default function ScribbleBtn() {
   return (
     <div className="ScribbleBtn-div">
       <OverlayTrigger placement="right" overlay={tooltipScribble}>
-        <button className="ScribbleBtn">
+        <button className="ScribbleBtn move-btn2">
           <Icon icon="tabler:scribble" width="60px" />
         </button>
       </OverlayTrigger>

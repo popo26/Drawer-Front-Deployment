@@ -26,7 +26,7 @@ export default function HomePage({ expandedIndex, handleExpand }) {
       <OverlayTrigger placement="bottom" overlay={tooltipCreate}>
         <Link
           to="/create"
-          className="btn btn-dark btn-lg"
+          className="btn btn-dark btn-lg move-btn2"
           data-testid="createNewDrawer"
         >
           <Icon icon="typcn:plus" />

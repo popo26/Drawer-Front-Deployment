@@ -56,7 +56,7 @@ export default function Search() {
             value={searchItem}
             placeholder="Enter keyword.."
           />
-          <Button variant="dark" onClick={handleSubmit}>
+          <Button variant="dark" onClick={handleSubmit} className="move-btn2">
             <Icon icon="bi:search" color="white" width="30" height="30" />
           </Button>
         </form>

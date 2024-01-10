@@ -63,14 +63,14 @@ export default function ScribbleListPage() {
             }}
           >
             <Icon
-              className="icon10"
+              className="icon10 move-btn2"
               icon="ion:trash-outline"
               color="black"
               width="24"
             />
           </a>
           <Icon
-            className="icon10"
+            className="icon10 move-btn2"
             icon="mingcute:drawer-line"
             color="black"
             width="25"
@@ -95,7 +95,7 @@ export default function ScribbleListPage() {
           color="black"
           width="50"
           onClick={() => navigate(-1)}
-          className="back-btn"
+          className="back-btn move-btn"
         />
       </div>
     </div>

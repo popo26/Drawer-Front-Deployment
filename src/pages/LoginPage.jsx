@@ -77,7 +77,7 @@ export default function LoginPage() {
           </Form.Group>
           {message && <Alert variant="danger">{message}</Alert>}
 
-          <Button variant="dark" type="submit" onClick={handleClick}>
+          <Button variant="dark" type="submit" onClick={handleClick} className="move-btn2">
             Login
           </Button>
         </Form>

@@ -114,7 +114,7 @@ export default function RegisterPage() {
             controlId="formBasicCheckbox"
           ></Form.Group>
           {message && <Alert variant="danger">{message}</Alert>}
-          <Button variant="dark" type="submit" onClick={handleSubmitRegister}>
+          <Button variant="dark" type="submit" onClick={handleSubmitRegister} className="move-btn2">
             Register
           </Button>
         </Form>

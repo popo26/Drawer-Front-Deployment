@@ -21,7 +21,7 @@ export default function MyButton({
     <>
       <OverlayTrigger placement="right" overlay={tooltipCreateAndSave}>
         <Link to={href}>
-          <Button variant="dark" onClick={handleClick}>
+          <Button variant="dark" onClick={handleClick} className="move-btn2">
             {" "}
             {btnName}
           </Button>{" "}

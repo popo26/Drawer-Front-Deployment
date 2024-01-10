@@ -66,7 +66,7 @@ export default function MyNavbar() {
         <Container>
           <Navbar.Brand href="#home">
             <NavLink className="navbar-brand" to="/">
-              <Icon icon="mingcute:drawer-line" color="black" width="50" />
+              <Icon icon="mingcute:drawer-line" color="black" width="50" className="move-btn2"/>
             </NavLink>
           </Navbar.Brand>
 
@@ -82,14 +82,14 @@ export default function MyNavbar() {
             <Nav.Link>
               <NavLink className="nav-link" to="/login">
                 <OverlayTrigger placement="bottom" overlay={tooltipLogin}>
-                  <Icon icon="clarity:login-solid" color="black" width="30" />
+                  <Icon icon="clarity:login-solid" color="black" width="30" className="move-btn2"/>
                 </OverlayTrigger>
               </NavLink>
             </Nav.Link>
             <Nav.Link>
               <NavLink className="nav-link" to="/register">
                 <OverlayTrigger placement="bottom" overlay={tooltipRegister}>
-                  <Icon icon="mdi:register" color="black" width="30" />
+                  <Icon icon="mdi:register" color="black" width="30" className="move-btn2"/>
                 </OverlayTrigger>
               </NavLink>
             </Nav.Link>
@@ -116,6 +116,7 @@ export default function MyNavbar() {
                 alt="logo"
                 width="36rem"
                 onClick={() => setIsExpanded(false)}
+                className="move-btn2"
               />
             </NavLink>
           </Navbar.Brand>
@@ -147,6 +148,7 @@ export default function MyNavbar() {
                       color="black"
                       width="30"
                       height="30"
+                      className="move-btn2"
                     />
                   </OverlayTrigger>
                 </NavLink>
@@ -163,6 +165,8 @@ export default function MyNavbar() {
                       color="black"
                       width="30"
                       height="30"
+                      className="move-btn2"
+
                     />
                   </OverlayTrigger>
                 </NavLink>
@@ -180,6 +184,8 @@ export default function MyNavbar() {
                         color="black"
                         width="30"
                         height="30"
+                        className="move-btn2"
+
                       />
                       {currentStrayScribblesNum > 0 && (
                         <Badge bg="danger">{currentStrayScribblesNum}</Badge>
@@ -199,6 +205,8 @@ export default function MyNavbar() {
                       icon="clarity:logout-solid"
                       color="black"
                       width="30"
+                      className="move-btn2"
+
                     />
                   </OverlayTrigger>
                 </NavLink>

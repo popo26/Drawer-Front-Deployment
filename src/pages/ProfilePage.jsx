@@ -101,7 +101,7 @@ export default function ProfilePage() {
                 variant="dark"
                 type="submit"
                 onClick={handleClick}
-                className="modify-btn"
+                className="modify-btn move-btn2"
               >
                 <Icon
                   icon="material-symbols:change-circle-outline"
@@ -135,7 +135,7 @@ export default function ProfilePage() {
                 variant="dark"
                 type="submit"
                 onClick={handleClick}
-                className="modify-btn"
+                className="modify-btn move-btn2"
               >
                 <Icon
                   icon="material-symbols:change-circle-outline"
@@ -169,7 +169,7 @@ export default function ProfilePage() {
                 variant="dark"
                 type="submit"
                 onClick={handlePasswordChange}
-                className="modify-btn"
+                className="modify-btn move-btn2"
               >
                 <Icon
                   icon="material-symbols:change-circle-outline"
@@ -184,7 +184,7 @@ export default function ProfilePage() {
       <br />
       <div>
         <Icon
-          className="back-btn"
+          className="back-btn move-btn"
           icon="icon-park-outline:back"
           color="black"
           width="50"

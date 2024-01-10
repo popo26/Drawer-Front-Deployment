@@ -45,14 +45,17 @@ export default function SortScribblePage() {
       stray: false,
       level: 1,
     };
-    fetch(`https://drawer-backend.onrender.com/api/scribbles/${selectedScribbleId}`, {
-      method: "PUT",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dataPost),
-    })
+    fetch(
+      `https://drawer-backend.onrender.com/api/scribbles/${selectedScribbleId}`,
+      {
+        method: "PUT",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataPost),
+      }
+    )
       .then((response) => response.json())
       .then(() => navigate(0))
       .catch((error) => console.error(error.message));
@@ -120,10 +123,10 @@ export default function SortScribblePage() {
     <div id="page">
       <h4>
         {!loadingScribbles && scrb[0].title}
-        <Icon icon="tabler:scribble" color="red" />{" "}
+        <Icon icon="tabler:scribble" color="#EA4C4C" />{" "}
         <Icon icon="ri:arrow-right-fill" />
         {selectedDrawerId && destinationDrawer?.name}{" "}
-        <Icon icon="mingcute:drawer-line" color="red" />
+        <Icon icon="mingcute:drawer-line" color="#EA4C4C" />
       </h4>
       <div>
         {newDrawerNameFieldSelected && (
@@ -157,7 +160,7 @@ export default function SortScribblePage() {
           <OverlayTrigger placement="right" overlay={tooltipNext}>
             <Button
               variant="dark"
-              className="next-btn"
+              className="next-btn move-btn2"
               onClick={(e) => {
                 e.preventDefault();
                 let passingData = { selectedScribbleId, selectedDrawerId };
@@ -180,6 +183,7 @@ export default function SortScribblePage() {
           color="black"
           width="50"
           onClick={() => navigate(-1)}
+          className="back-btn move-btn"
         />
       </div>
     </div>

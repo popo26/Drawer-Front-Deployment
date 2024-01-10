@@ -12,7 +12,7 @@ export default function SearchPage() {
     <div className="SearchPage">
       <Search user={user} />
 
-      <div className="back-btn">
+      <div className="back-btn move-btn">
         <Icon
           icon="icon-park-outline:back"
           color="black"

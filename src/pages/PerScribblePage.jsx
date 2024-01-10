@@ -230,7 +230,7 @@ export default function PerScribblePage() {
       </div>
       <div>
         <Icon
-          className="icon5"
+          className="icon5 move-btn"
           icon="icon-park-outline:back"
           color="black"
           width="30"
@@ -239,14 +239,14 @@ export default function PerScribblePage() {
         {!isEditable ? (
           <Icon
             icon="uiw:edit"
-            className="icon5"
+            className="icon5 move-btn"
             color="black"
             width="30"
             onClick={handleEdit}
           />
         ) : (
           <Icon
-            className="icon5"
+            className="icon5 move-btn"
             icon="material-symbols:update"
             color="red"
             width="30"
@@ -255,7 +255,7 @@ export default function PerScribblePage() {
         )}
 
         <Icon
-          className="icon5"
+          className="icon5 move-btn"
           icon="ion:trash-outline"
           color="black"
           width="30"
@@ -263,7 +263,7 @@ export default function PerScribblePage() {
         />
 
         <Icon
-          className="icon5"
+          className="icon5 move-btn"
           icon="mingcute:drawer-line"
           color="black"
           width="30"

@@ -79,7 +79,7 @@ export default function CreateDrawerPage() {
       <div>
         {" "}
         <Icon
-          className="back-btn"
+          className="back-btn move-btn"
           icon="icon-park-outline:back"
           color="black"
           width="50"

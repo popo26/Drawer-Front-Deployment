@@ -221,10 +221,10 @@ export default function SortDrawerPage() {
         {sessionStorage.getItem("drawerToBeMoved") &&
           !loadingDrawers &&
           drawerToBeMovedObjName()}
-        <Icon icon="mingcute:drawer-line" color="red" />
+        <Icon icon="mingcute:drawer-line" color="#EA4C4C" />
         <Icon icon="ri:arrow-right-fill" />
         {selectedDrawerId && destinationDrawerObjName()}
-        <Icon icon="mingcute:drawer-line" color="red" />
+        <Icon icon="mingcute:drawer-line" color="#EA4C4C" />
       </h4>
 
       {newDrawerNameFieldSelected && (
@@ -259,7 +259,7 @@ export default function SortDrawerPage() {
           <OverlayTrigger placement="right" overlay={tooltipNext}>
             <Button
               variant="dark"
-              className="next-btn"
+              className="next-btn move-btn2"
               onClick={(e) => {
                 e.preventDefault();
                 let passingData = { selectedDrawerId, drawerToBeMoved };
@@ -283,6 +283,7 @@ export default function SortDrawerPage() {
           color="black"
           width="50"
           onClick={() => navigate(-1)}
+          className="back-btn move-btn"
         />
       </div>
     </div>
