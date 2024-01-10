@@ -30,6 +30,7 @@ export function useTimeout() {
           sessionStorage.setItem("scribblesData", null);
           sessionStorage.setItem("drawersData", null);
           sessionStorage.setItem("selectedDrawer", null);
+          sessionStorage.setItem("selectedDrawerId", null);
           sessionStorage.setItem("selectedScribble", null);
           sessionStorage.setItem("toBeMovedDrawer", null);
           sessionStorage.setItem("drawerToBeMoved", null);
