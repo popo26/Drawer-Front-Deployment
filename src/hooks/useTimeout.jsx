@@ -33,6 +33,7 @@ export function useTimeout() {
           sessionStorage.setItem("selectedScribble", null);
           sessionStorage.setItem("toBeMovedDrawer", null);
           sessionStorage.setItem("drawerToBeMoved", null);
+          sessionStorage.setItem("files", null);
           localStorage.setItem("lastActvity", null);
           navigate(0);
         });
