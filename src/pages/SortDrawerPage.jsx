@@ -194,7 +194,7 @@ export default function SortDrawerPage() {
       !drawerName ? alert("The new drawer name is empty.") : createNewDrawer();
       setDrawerName("");
       navigate("/home");
-      navigate(0);
+      //navigate(0);
       // setTimeout(() => navigate(0), 50);
     }
   };
@@ -218,12 +218,9 @@ export default function SortDrawerPage() {
   };
 
   const destinationDrawerObjName = () => {
-    // const obj = drawers.filter((item) => item._id === selectedDrawerId);
-    // return obj[0]["name"];
-    if (selectedDrawerId && !loadingDrawers){
-      const obj = drawers.filter((item) => item._id === selectedDrawerId);
-      return obj[0]["name"];
-    }
+    const obj = drawers.filter((item) => item._id === selectedDrawerId);
+    return obj[0]["name"];
+  
   };
 
   return (
