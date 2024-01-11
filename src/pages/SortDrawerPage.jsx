@@ -218,8 +218,12 @@ export default function SortDrawerPage() {
   };
 
   const destinationDrawerObjName = () => {
-    const obj = drawers.filter((item) => item._id === selectedDrawerId);
-    return obj[0]["name"];
+    // const obj = drawers.filter((item) => item._id === selectedDrawerId);
+    // return obj[0]["name"];
+    if (selectedDrawerId && !loadingDrawers){
+      const obj = drawers.filter((item) => item._id === selectedDrawerId);
+      return obj[0]["name"];
+    }
   };
 
   return (
