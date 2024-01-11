@@ -217,11 +217,14 @@ export default function SortDrawerPage() {
     return obj[0]["name"];
   };
 
-  const destinationDrawerObjName = () => {
-    const obj = drawers.filter((item) => item._id === selectedDrawerId);
-    return obj[0]["name"];
-  
-  };
+  // const destinationDrawerObjName = () => {
+  //   const obj = drawers.filter((item) => item._id === selectedDrawerId);
+  //   return obj[0]["name"];
+  // };
+
+  const destinationDrawer = drawers.find(
+    (item) => item._id === selectedDrawerId
+  );
 
   return (
     <div id="page">
@@ -232,7 +235,9 @@ export default function SortDrawerPage() {
         <Icon icon="mingcute:drawer-line" color="#EA4C4C" />
         <Icon icon="ri:arrow-right-fill" />
 
-        {selectedDrawerId && !loadingDrawers && destinationDrawerObjName()}
+        {/* {selectedDrawerId && !loadingDrawers && destinationDrawerObjName()} */}
+        {selectedDrawerId && destinationDrawer?.name}
+
         <Icon icon="mingcute:drawer-line" color="#EA4C4C" />
       </h4>
 
