@@ -185,8 +185,7 @@ export default function SortDrawerPage() {
       setDrawerName("");
       navigate("/home");
       //navigate(0);
-      setTimeout(()=>navigate(0), 50)
-
+      setTimeout(() => navigate(0), 1000);
     }
   };
 
