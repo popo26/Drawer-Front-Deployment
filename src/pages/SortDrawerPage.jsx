@@ -184,7 +184,9 @@ export default function SortDrawerPage() {
       !drawerName ? alert("The new drawer name is empty.") : createNewDrawer();
       setDrawerName("");
       navigate("/home");
-      navigate(0);
+      //navigate(0);
+      setTimeout(()=>navigate(0), 50)
+
     }
   };
 
