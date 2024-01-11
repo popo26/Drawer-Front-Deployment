@@ -11,23 +11,20 @@ export const DataProvider = (props) => {
 
   const navigate = useNavigate();
 
+//experiment
+
   //retrieve data from sessionStorage on mount or refresh
   useEffect(() => {
     const drawersData = JSON.parse(sessionStorage.getItem("drawersData"));
     if (drawersData) {
       setDrawers(drawersData);
     }
-  }, []);
 
-  useEffect(() => {
     const scribblesData = JSON.parse(sessionStorage.getItem("scribblesData"));
     if (scribblesData) {
       setScribbles(scribblesData);
     }
-  }, []);
 
-  //Fetch data from the server
-  useEffect(() => {
     fetch("https://drawer-backend.onrender.com/api/scribbles", {
       method: "GET",
       mode: "cors",
@@ -37,19 +34,66 @@ export const DataProvider = (props) => {
         setLoadingScribbles(false);
         setScribbles(json.data);
       });
+
+      fetch("https://drawer-backend.onrender.com/api/drawers", {
+        method: "GET",
+        mode: "cors",
+      })
+        .then((response) => response.json())
+        .then((json) => {
+          setLoadingDrawers(false);
+          setDrawers(json.data);
+        });
+
   }, []);
 
-  useEffect(() => {
-    fetch("https://drawer-backend.onrender.com/api/drawers", {
-      method: "GET",
-      mode: "cors",
-    })
-      .then((response) => response.json())
-      .then((json) => {
-        setLoadingDrawers(false);
-        setDrawers(json.data);
-      });
-  }, []);
+ 
+
+ 
+
+
+
+
+
+  // //retrieve data from sessionStorage on mount or refresh
+  // useEffect(() => {
+  //   const drawersData = JSON.parse(sessionStorage.getItem("drawersData"));
+  //   if (drawersData) {
+  //     setDrawers(drawersData);
+  //   }
+  // }, []);
+
+  // useEffect(() => {
+  //   const scribblesData = JSON.parse(sessionStorage.getItem("scribblesData"));
+  //   if (scribblesData) {
+  //     setScribbles(scribblesData);
+  //   }
+  // }, []);
+
+  // //Fetch data from the server
+  // useEffect(() => {
+  //   fetch("https://drawer-backend.onrender.com/api/scribbles", {
+  //     method: "GET",
+  //     mode: "cors",
+  //   })
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       setLoadingScribbles(false);
+  //       setScribbles(json.data);
+  //     });
+  // }, []);
+
+  // useEffect(() => {
+  //   fetch("https://drawer-backend.onrender.com/api/drawers", {
+  //     method: "GET",
+  //     mode: "cors",
+  //   })
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       setLoadingDrawers(false);
+  //       setDrawers(json.data);
+  //     });
+  // }, []);
 
   // Local Storage: setting & getting data
   const updateRootId = (drawerId) => {
